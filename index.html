@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>URBN Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">Test123
+      </div>
+      <ul>
+        <li class="active"><i class="fas fa-table-columns"></i> Dashboard</li>
+        <li><i class="fas fa-ad"></i> Advertisements</li>
+        <li><i class="fas fa-bolt"></i> Deals</li>
+        <li><i class="fas fa-user"></i> Clients</li>
+        <li><i class="fas fa-chart-line"></i> Analytics</li>
+        <li><i class="fas fa-users"></i> Team</li>
+        <li><i class="fas fa-message"></i> Messages</li>
+        <li><i class="fas fa-bell"></i> Notifications <span class="badge">5</span></li>
+        <li><i class="fas fa-gear"></i> Settings</li>
+        <li><i class="fas fa-circle-question"></i> Help & Support</li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+      </div>
+
+      <!-- Widgets -->
+      <div class="widgets">
+        <div class="widget">
+          <h4>Smart score</h4>
+          <p class="value">82 <span>/ 100</span></p>
+          <p class="positive">↑ 18 Last week</p>
+        </div>
+        <div class="widget">
+          <h4>Number of sales</h4>
+          <p class="value">24</p>
+          <p class="positive">↑ 20% Last week</p>
+        </div>
+        <div class="widget">
+          <h4>Leads</h4>
+          <p class="value">2,986</p>
+          <p class="positive">↑ 12% Last week</p>
+        </div>
+      </div>
+
+      <!-- Chart Section -->
+      <div class="chart-section">
+        <div class="chart-box">
+          <h3>Total Sales</h3>
+          <p class="big-number">$1,652,850</p>
+          <canvas id="salesChart"></canvas>
+        </div>
+        <div class="chart-box">
+          <h3>Number of Sales</h3>
+          <p class="big-number">24</p>
+          <canvas id="barChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Ads Section -->
+      <div class="ads-section">
+        <h3>Active advertisements</h3>
+        <div class="ad-card">
+          <img src="https://via.placeholder.com/100x70" alt="Ad Image" />
+          <div class="ad-info">
+            <h4>$1,528,000</h4>
+            <p>Active 101 days</p>
+          </div>
+          <button class="edit-btn">Edit</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
